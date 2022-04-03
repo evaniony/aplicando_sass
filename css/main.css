@@ -1,0 +1,56 @@
+body {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  background-color: #c2e8e8; }
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 15px auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "header header header" "text text gallery" "text text gallery" "footer footer footer"; }
+  .container div .header, .container .text, .container .gallery, .container .footer {
+    background: #fff;
+    padding: 20px; }
+  .container .header {
+    grid-area: header;
+    background-color: #7BF1A8;
+    color: #fffdfd;
+    border-radius: 5px;
+    display: flex; }
+    .container .header li {
+      list-style-type: none; }
+  .container .text {
+    grid-area: text;
+    background-color: #FFB60A;
+    border-radius: 5px;
+    max-height: 100%; }
+    .container .text h2 {
+      font-size: 32px; }
+    .container .text p {
+      text-align: left;
+      margin-top: 15px; }
+  .container .gallery {
+    grid-area: gallery;
+    background-color: #FF9B85;
+    border-radius: 5px; }
+    .container .gallery {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      flex-wrap: wrap; }
+    .container .gallery p {
+      text-align: center;
+      margin: 40px; }
+    .container .gallery div {
+      width: 200px;
+      height: 200px;
+      border-radius: 5px;
+      background-color: #fff;
+      margin: 10px; }
+  .container .footer {
+    grid-area: footer;
+    background-color: #EE6055;
+    border-radius: 5px; }
